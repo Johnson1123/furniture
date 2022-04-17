@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Furniture Service</title>
+
+     <style>
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               list-style: none;
+          }
+          .flex{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          .column{
+               flex-direction: column;
+          }
+          .start{
+               justify-content: flex-start;
+          }
+          .s-center{
+               align-self: center;
+          }
+          .align-start{
+               align-items: flex-start;
+          }
+          .end{
+               justify-content: flex-end;
+          }
+          .text{
+               color: #fff;
+               font-family: roboto;
+          }
+          .label-text{
+               font-size: 22px;
+               align-self: flex-start;
+               margin: 5px 0 5px 10%;
+               
+          }
+          .form-title {
+               font-size: 30px;
+               text-align: center;
+               margin: 10px 0;
+          }
+          .contact-form-con{
+               height: 100vh;
+               width: 100vw;
+               background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('asset/picture/bed-13.jpg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center center;
+               flex-direction: column;
+          }
+          .contact-form{
+               width: auto;
+               width: 90%;
+          }
+          .contact-input{
+               height: 40px;
+               width: 80%;
+               margin: 5px 0;
+          }
+          textarea{
+               width: 80%;
+          }
+          .btn-submit{
+               width: 30%;
+               height: 50px;
+               margin: 10px 0;
+               border-radius: 5px;
+               border: none;
+               font-size: 20px;
+               background-color: rgb(82, 207, 99);
+          }
+          input[placeholder]{
+               padding-left: 5px;
+          }
+          input:focus, textarea:focus{
+               outline: none;
+          }
+          @media only screen and (min-width: 768px) {
+           .contact-form{
+                width: 35%;
+           }
+            .form-title {
+               font-size: 25px;
+               margin: 5px 0;
+          }
+           .label-text{
+               font-size: 14px;
+               margin: 5px 0 3px 10%;
+          }
+          .contact-input{
+               height: 30px;
+               width: 80%;
+               margin: 3px 0;
+          }
+           .btn-submit{
+               width: 20%;
+               height: 35px;
+               margin: 10px 0;
+               border-radius: 5px;
+               border: none;
+               font-size: 12px;
+          }
+          }
+     </style>
+     <link rel="stylesheet" href="asset/font-awesome-4.7/css/font-awesome.min.css">
+     <link rel="stylesheet" href="asset/css/style.css">
+     <link rel="stylesheet" href="asset/css/product.css">
+</head>
+
+<body>
+     <!-- header section -->
+     <header class="p-header">
+          <div class="flex-center column">
+               <nav class="flex nav-con">
+                    <h1 class="logo text flex-center"><a href="index.html" class="text logo-text p-text">PONEC</a></h1>
+                    <ul class="sm-ul">
+                         <li class="sm-li"><a href="index.html">Home</a></li>
+                         <li class="sm-li"><a href="product.html">Product</a></li>
+                         <li class="sm-li"><a href="contact.html">Contact</a></li>
+                         <li class="sm-li"><a href="about-us.html">About-Us</a></li>
+                         <li class="sm-li"><a href="Login">LogIn</a></li>
+                    </ul>
+                    <div class="toggler flex-center p-toggle"><i class="fa fa-bars"></i></div>
+               </nav>
+          </div>
+     </header>
+
+     <!-- main section -->
+          <div class="contact-form-con container-wrapper flex-center">
+               <form action="" method="" class="flex-center column  contact-form">
+                    <h3 class="form-title text s-center">Contact Detail</h3>
+                    <label for="Fname" class="label-text text label_Fname">First Name: </label>
+                    <input type="text" class="contact-input" id="Fname" placeholder="First name">
+                    <label for="Lname" class="label-text text label_Lname">Last Name: </label>
+                    <input type="text" name="" id="Lname" class="contact-input" placeholder="Last name">
+                    <label for="email" class="label-text text label_Email">E-mail: </label>
+                    <input type="email" name="" id="email" class="contact-input"         placeholder="E-mail">
+                    <label for="des_text" class="label-text text label_des">Description</label>
+                    <textarea name="des_text" class="text label-text" id="des_text" cols="30"      rows="5"></textarea>
+                    <input type="submit" name="submit" class="btn btn-submit text" value="Submit">
+               </form>
+          </div>
+  <!-- footer section -->
+     <footer>
+          <div class="wrapper wrap-foo flex-center">
+               <div class="footer-row lg-flex lg-row">
+                    <div class="footer-right">
+                         <h5 class="box-title title footer-title">PONEC</h5>
+                         <p class="text foo-text">
+                              Ponic is an online shopping destination for home wares, office furnishing and outdoor furniture for your lounge and garden with trusted services.
+                         </p>
+                    </div>
+                    <div class="footer-left flex">
+
+                        <div class="footer-box">
+                             <h5 class="text title footer-title box-title">COMPANY</h5>
+                             <ul>
+                                  <li class="foo-list">Home</li>
+                                  <li class="foo-list">About Us</li>
+                                  <li class="foo-list">Careers</li>
+                                  <li class="foo-list">CSR</li>
+                                  <li class="foo-list">FAQs</li>
+                                  <li class="foo-list">Press Kit</li>
+                                  <li class="foo-list">Promotion</li>
+                                  <li class="foo-list">Privacy Policy</li>
+                             </ul>
+                         </div>
+
+                        <div class="footer-box">
+                             <h5 class="text title footer-title box-title">BUSSINESS SERVICES</h5>
+                             <ul>
+                                  <li class="foo-list">Advertise</li>
+                                  <li class="foo-list">Affilate Program</li>
+                                  <li class="foo-list">Hire Artisans</li>
+                                  <li class="foo-list">HOG Easy Pay</li>
+                                  <li class="foo-list">Loyalty Rewards</li>
+                                  <li class="foo-list">Sell on HOG</li>
+                                  <li class="foo-list">Submit A Story</li>
+                             </ul>
+                         </div>
+
+                        <div class="footer-box">
+                             <h5 class="text box-title footer-title">LET'S HELP YOU</h5>
+                             <ul>
+                                  <li class="foo-list">Search</li>
+                                  <li class="foo-list">Contact Us</li>
+                                  <li class="foo-list">Bulk Purchase</li>
+                                  <li class="foo-list">Shipping & Delivery</li>
+                             </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+</body>
+
+</html>
