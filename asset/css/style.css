@@ -1,12 +1,12 @@
 :root{
      --f-primary: roboto;
      --f-secondary: lato;
-     --fz-xlarge: 24px;
-     --fz-mini: 14px;
-     --fz-large: 20px;
-     --fz-micro: 16px;
-     --fz-medium: 18px;
-     --fz-30: 30px;
+     --fz-xlarge: 18px;
+     --fz-mini: 10px;
+     --fz-large: 16px;
+     --fz-micro: 12px;
+     --fz-medium: 16px;
+     --fz-30: 24px;
      --w-100: 100%;
      --w-50: 50%;
      --w-20: 20%;
@@ -155,7 +155,7 @@ header{
 .banner-text{
      height: 100%;
      width: 80%;
-     font-size: 42px;
+     font-size: 28px;
      text-align: center;
      font-weight: 700;
 }
@@ -468,7 +468,7 @@ section{
 }
 
 .product-main-con{
-     height: 70vh;
+     min-height: 80vh;
      width: 100%;
      position: relative;
      background: linear-gradient(269deg, black, transparent);
