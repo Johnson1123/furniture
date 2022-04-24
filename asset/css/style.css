@@ -1,12 +1,12 @@
 :root{
      --f-primary: roboto;
      --f-secondary: lato;
-     --fz-xlarge: 18px;
-     --fz-mini: 10px;
-     --fz-large: 16px;
-     --fz-micro: 12px;
-     --fz-medium: 16px;
-     --fz-30: 24px;
+     --fz-xlarge: 24px;
+     --fz-mini: 14px;
+     --fz-large: 20px;
+     --fz-micro: 16px;
+     --fz-medium: 18px;
+     --fz-30: 30px;
      --w-100: 100%;
      --w-50: 50%;
      --w-20: 20%;
@@ -155,7 +155,7 @@ header{
 .banner-text{
      height: 100%;
      width: 80%;
-     font-size: 28px;
+     font-size: 42px;
      text-align: center;
      font-weight: 700;
 }
@@ -257,6 +257,9 @@ section{
      font-size: var(--fz-mini);
      font-weight: 500;
      width: 80%;
+     line-height: 2;
+}
+.product-p-text{
      line-height: 2;
 }
 .price{
@@ -429,11 +432,12 @@ section{
 }
 .foo-text{
      padding: 10px 0;
-     font-size: 22px;
+     font-size: 16px;
+     line-height: 2;
      text-align: justify;
 }
 .footer-title{
-     font-size: var(--fz-large);
+     font-size: var(--fz-macro);
      color: var(--color-white);
      text-align: center;
      width: 100%;
@@ -442,9 +446,9 @@ section{
      align-items: center;
 }
 .foo-list{
-     font-size: var(--fz-large);
+     font-size: var(--fz-micro);
      font-family: roboto;
-     line-height: 2;
+     line-height: 3;
      padding: 0px 10px;
 }
 .footer-box{
@@ -468,14 +472,14 @@ section{
 }
 
 .product-main-con{
-     min-height: 80vh;
+     height: 70vh;
      width: 100%;
      position: relative;
      background: linear-gradient(269deg, black, transparent);
 }
 .product-p-con{
      position: absolute;
-     height: 90%;
+     min-height: 90%;
      width: 90%;
      background-color: var(--color-white);
      /* box-shadow:  inset 10px 10px 10px gray; */
@@ -540,6 +544,7 @@ section{
 .product-p-price{
      font-size: var(--fz-macro);
      font-weight: 600;
+     margin-right: 10px;
 }
 .btn-cart{
      background: #e7be4d;
@@ -954,6 +959,17 @@ section{
      .product{
           box-shadow:  10px 10px 5px grey;
      }
+     .product-brand{
+          margin: 10px 0;
+     }
+     .product-p-text{
+          line-height: 2;
+          padding-right: 10px;
+          margin-top: 20px;
+     }
+     .product-p-image{
+          height: 300px;
+     }
      .product img {
            width: 100%;
            height: 200px;
@@ -1120,14 +1136,17 @@ section{
      }
      .footer-right .foo-text{
           width: 70%;
-          font-size: var(--fz-micro);
+          font-size: var(--fz-mini);
      }
      .foo-list{
-          font-size: var(--fz-micro);
+          font-size: var(--fz-mini);
      }
      .footer-box{
           width: 33%;
           margin: 0;
+     }
+     .footer-title{
+          font-size: var(--fz-mini);
      }
 
      /* product page */
