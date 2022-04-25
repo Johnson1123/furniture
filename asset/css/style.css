@@ -7,6 +7,7 @@
      --fz-micro: 16px;
      --fz-medium: 18px;
      --fz-30: 30px;
+     --fz-26: 26px;
      --w-100: 100%;
      --w-50: 50%;
      --w-20: 20%;
@@ -40,14 +41,14 @@ img{
 }
 .text{
      font-family: var(--f-primary);
-     font-size: var(--fz-large);
+     font-size: var(--fz-micro);
      color: var(--color-white);
      line-height: 1.5;
      font-weight: 400;
 }
 
 .title{
-     font-size: var(--fz-30);
+     font-size: var(--fz-26);
      line-height: 2;
      font-weight: 600;
 }
@@ -88,9 +89,15 @@ header{
      position: relative;
      justify-content: space-between;
      align-items: center;
-     width: 100%;
+     width: 90%;
      height: 70px;
      background: transparent;
+}
+.main-nav{
+     display: none;
+}
+.nav-a{
+     color: #fff;
 }
 .logo-text{
      font-size: var(--fz-macro);
@@ -196,7 +203,7 @@ section{
      line-height: 2;
      width: 80%;
      text-align: justify;
-     font-size: var(--fz-large);
+     font-size: var(--fz-micro);
 }
 .read-more{
      font-size: var(--fz-large);
@@ -228,7 +235,7 @@ section{
      padding: 10px;
 }
 .cat-a{
-     font-size: var(--fz-mini);
+     font-size: var(--fz-micro);
      color: var(--color-black);
      padding: 5px;
 }
@@ -254,7 +261,7 @@ section{
 .product-title{
      color: var(--color-black);
      text-align: left;
-     font-size: var(--fz-mini);
+     font-size: var(--fz-macro);
      font-weight: 500;
      width: 80%;
      line-height: 2;
@@ -284,10 +291,11 @@ section{
      width: 100%;
      text-align: center;
      line-height: 1.5;
+     margin: 10px 0;
 }
 .box-text{
      color: var(--color-black);
-     font-size: var(--fz-mini);
+     font-size: var(--fz-micro);
      line-height: 2;
      width: 100%;
      text-align: justify;
@@ -295,7 +303,7 @@ section{
      padding: 10px 0;
 }
 .btn-more{
-     padding: 15px;
+     padding: 10px;
      margin: 10px 0;
      background-color: var(--color-black);
 }
@@ -311,11 +319,11 @@ section{
 }
 .ser-inner .title{
      color: var(--color-black);
-     font-size: 28px;
+     font-size: var(--fz-large);
      padding: 0 10px;
 }
 .ser-inner p{
-     font-size: 26px;
+     font-size: var(--fz-macro);
      font-family: var(--f-secondary);
      padding: 10px;
      line-height: 1.7;
@@ -472,7 +480,7 @@ section{
 }
 
 .product-main-con{
-     height: 70vh;
+     height: 560px;
      width: 100%;
      position: relative;
      background: linear-gradient(269deg, black, transparent);
@@ -560,6 +568,9 @@ section{
 /* medium screen */
 
 @media only screen and (min-width: 768px) {
+     .toggler{
+          display: none;
+     }
      .lg-flex{
           display: flex;
           justify-content: center;
@@ -567,6 +578,24 @@ section{
      }
      .lg-column{
           flex-direction: column;
+     }
+     header{
+          height: 40vh;
+     }
+     .main-nav{
+          width: 55%;
+          display: flex;
+     }
+     .nav-ul{
+          width: 100%;
+          justify-content: space-between;
+     }
+     .nav-a{
+          font-size: var(--fz-macro);
+          padding: 10px 5px;
+     }
+     .nav-a:hover{
+          color: #f1e3e3;
      }
      
      .banner-text {
@@ -626,7 +655,7 @@ section{
           
      }
      .product{
-          box-shadow:  10px 10px 5px grey;
+          box-shadow:  4px 5px 2px grey;
      }
      .product img {
            width: 100%;
@@ -752,9 +781,6 @@ section{
      }
 
      /* footer style */
-     .wrap-foo{
-          height: 350px;
-     }
      .footer-row{
           align-items: flex-start;
      }
@@ -781,9 +807,7 @@ section{
 
 
      /* product style */
-.product-main-con{
-     height: 100vh;
-}
+
 .bg-container{
      height: 100%;
      width: 100%;
@@ -851,7 +875,7 @@ section{
      height: 70%;
 }
 .product-p-image img{
-     width: 70%;
+     width: 80%;
      height: 100%;
 }
 .img-icon{
@@ -893,6 +917,7 @@ section{
 }
 .price-cart-con{
      height: 100px;
+     margin: 0;
 }
 .product-p-price{
      font-size: var(--fz-macro);
@@ -908,9 +933,45 @@ section{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* large screen */
 
 @media only screen and (min-width: 992px)  {
+     header{
+          height: 100vh;
+     }
+     .main-nav{
+          width: 35%;
+     }
+     .nav-a{
+          font-size: var(--fz-mini);
+     }
      .banner-text {
          width: 35%;
          font-size: 36px;
@@ -952,6 +1013,9 @@ section{
      .cat-a{
           font-size: var(--fz-large);
      }
+     .product-main-con{
+          height: 560px;
+     }
      .product-con {
           width: 24%;
           
@@ -979,14 +1043,16 @@ section{
           text-align: left;
           font-size: var(--fz-micro);
           line-height: 1.5;
+          font-size: var(--fz-mini);
      }
      .price{
-          font-size: 16px;
+          font-size: var(--fz-mini);
      }
 
      /* Service style */
      .service-con{
           flex-direction: row;
+          height: 600px;
      }
      .ser-1{
           width: 40%;
@@ -1010,22 +1076,27 @@ section{
           flex-wrap: wrap;
           justify-content: space-between;
           width: 55%;
+          margin: 0;
      }
      .ser-inner {
           width: 45%;
-          min-height: 170%;
+          
      }
      .ser-inner:nth-child(1){
           margin-left: 20px;
      }
      .ser-inner:nth-child(2){
-          margin-top: 150px;
+          position: relative;
+          top: 40px;
      }
      .ser-inner:nth-child(3){
-          margin-top: -150px;
+          position: relative;
+          top: -50px;
      }
      .ser-inner:nth-child(4){
           margin-right: 40px;
+          position: relative;
+          top: 30px;
      }
      .ser-inner .title{
           font-size: var(--fz-large);
@@ -1115,9 +1186,6 @@ section{
      }
 
      /* footer style */
-     .wrap-foo{
-          height: 350px;
-     }
      .footer-row{
           align-items: flex-start;
           width: 90%;
