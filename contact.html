@@ -7,114 +7,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Furniture Service</title>
 
-     <style>
-           *{
-               margin: 0;
-               padding: 0;
-               box-sizing: border-box;
-               list-style: none;
-          }
-          .flex{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-          }
-          .column{
-               flex-direction: column;
-          }
-          .start{
-               justify-content: flex-start;
-          }
-          .s-center{
-               align-self: center;
-          }
-          .align-start{
-               align-items: flex-start;
-          }
-          .end{
-               justify-content: flex-end;
-          }
-          .text{
-               color: #fff;
-               font-family: roboto;
-          }
-          .label-text{
-               font-size: 22px;
-               align-self: flex-start;
-               margin: 5px 0 5px 10%;
-               
-          }
-          .form-title {
-               font-size: 30px;
-               text-align: center;
-               margin: 10px 0;
-          }
-          .contact-form-con{
-               height: 100vh;
-               width: 100vw;
-               background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('asset/picture/bed-13.jpg');
-               background-repeat: no-repeat;
-               background-size: cover;
-               background-position: center center;
-               flex-direction: column;
-          }
-          .contact-form{
-               width: auto;
-               width: 90%;
-          }
-          .contact-input{
-               height: 40px;
-               width: 80%;
-               margin: 5px 0;
-          }
-          textarea{
-               width: 80%;
-          }
-          .btn-submit{
-               width: 30%;
-               height: 50px;
-               margin: 10px 0;
-               border-radius: 5px;
-               border: none;
-               font-size: 20px;
-               background-color: rgb(82, 207, 99);
-          }
-          input[placeholder]{
-               padding-left: 5px;
-          }
-          input:focus, textarea:focus{
-               outline: none;
-          }
-          @media only screen and (min-width: 768px) {
-           .contact-form{
-                width: 35%;
-           }
-            .form-title {
-               font-size: 25px;
-               margin: 5px 0;
-          }
-           .label-text{
-               font-size: 14px;
-               margin: 5px 0 3px 10%;
-          }
-          .contact-input{
-               height: 30px;
-               width: 80%;
-               margin: 3px 0;
-          }
-           .btn-submit{
-               width: 20%;
-               height: 35px;
-               margin: 10px 0;
-               border-radius: 5px;
-               border: none;
-               font-size: 12px;
-          }
-          }
-     </style>
+
+     <!-- style link -->
      <link rel="stylesheet" href="asset/font-awesome-4.7/css/font-awesome.min.css">
      <link rel="stylesheet" href="asset/css/style.css">
-     <link rel="stylesheet" href="asset/css/product.css">
 </head>
 
 <body>
@@ -123,33 +19,72 @@
           <div class="flex-center column">
                <nav class="flex nav-con">
                     <h1 class="logo text flex-center"><a href="index.html" class="text logo-text p-text">PONEC</a></h1>
-                    <ul class="sm-ul">
-                         <li class="sm-li"><a href="index.html">Home</a></li>
-                         <li class="sm-li"><a href="product.html">Product</a></li>
-                         <li class="sm-li"><a href="contact.html">Contact</a></li>
-                         <li class="sm-li"><a href="about-us.html">About-Us</a></li>
-                         <li class="sm-li"><a href="Login">LogIn</a></li>
-                    </ul>
-                    <div class="toggler flex-center p-toggle"><i class="fa fa-bars"></i></div>
+                    <div class="main-nav">
+                         <ul class="nav-ul lg-flex">
+                              <li class="nav-li"><a href="index.html" class="text a-anchor nav-a">Home</a></li>
+                              <li class="nav-li"><a href="product.html" class="text a-anchor nav-a">Product</a></li>
+                              <li class="nav-li"><a href="contact.html" class="text a-anchor nav-a">Contact</a></li>
+                              <li class="nav-li"><a href="about-us.html" class="text a-anchor nav-a">About-Us</a></li>
+                              <li class="nav-li"><a href="Loginhtml" class="text a-anchor nav-a">LogIn</a></li>
+                         </ul>
+                    </div>
+                    <div class="toggler flex-center p-toggle" id="bars"><i class="fa fa-bars"></i></div>
                </nav>
           </div>
      </header>
 
+     <!-- moblie side bar -->
+     <div class="list-con" id="smNav">
+         <ul class="list-ul">
+            <li class="a-li"><a href="index.html" class="text a-anchor">Home</a></li>
+            <li class="a-li"><a href="product.html" class="text a-anchor">Product</a></li>
+            <li class="a-li"><a href="contact.html" class="text a-anchor">Contact</a></li>
+            <li class="a-li"><a href="about-us.html" class="text a-anchor">About-Us</a></li>
+            <li class="a-li btn btn-link"><a href="Loginhtml" class="text a-anchor">LogIn</a></li>
+         </ul>
+         <span class="fa fa-close close" id="close"></span>
+     </div>
+
      <!-- main section -->
-          <div class="contact-form-con container-wrapper flex-center">
-               <form action="" method="" class="flex-center column  contact-form">
-                    <h3 class="form-title text s-center">Contact Detail</h3>
-                    <label for="Fname" class="label-text text label_Fname">First Name: </label>
-                    <input type="text" class="contact-input" id="Fname" placeholder="First name">
-                    <label for="Lname" class="label-text text label_Lname">Last Name: </label>
-                    <input type="text" name="" id="Lname" class="contact-input" placeholder="Last name">
-                    <label for="email" class="label-text text label_Email">E-mail: </label>
-                    <input type="email" name="" id="email" class="contact-input"         placeholder="E-mail">
-                    <label for="des_text" class="label-text text label_des">Description</label>
-                    <textarea name="des_text" class="text label-text" id="des_text" cols="30"      rows="5"></textarea>
-                    <input type="submit" name="submit" class="btn btn-submit text" value="Submit">
-               </form>
-          </div>
+     <main>
+          <section class="google-map flex-center">
+               <div class="google-map-con">
+                    <img src="asset/picture/google-maps.jpg" alt="" name="googleImage">
+                    <div class="zoom-con flex column">
+                         <i class="zoom zoom-plus fa fa-plus" id="zoomPlus"></i>
+                         <i class="zoom zoom-minus fa fa-minus" id="zoomMinus"></i>
+                    </div>
+               </div>
+          </section>
+          <section>
+               <div class="address-con flex-center column">
+                    <div class="addCon">
+                         <h3 class="title text add-title border-bt p-tb">Contact Us</h3>
+                         <p class="text p-text address-p border-bt p-tb">Your content here</p>
+                         <address>
+                              <p class="text p-text address-phone border-bt p-tb"><i class="fa fa-phone"></i>Address: No 40 Baria Street 133/2 <br> NewYork City</p>
+                              <p class="text p-text address-email border-bt p-tb"><i class="fa fa-phone"></i>Email: Onifadejohnson2014@gmail.com</p>
+                              <p class="text p-text address-number p-tb"><i class="fa fa-address-book"></i> +88013245657</p>
+
+                         </address>
+                    </div>
+                    <form action="" method="" class="flex-center column  contact-form">
+                         <h3 class="form-title text s-center">Tell Us Your Project</h3>
+                         <label for="Fname" class="label-text text label_Fname">First Name * </label>
+                         <input type="text" class="contact-input" id="Fname" placeholder="First name">
+                         <label for="Lname" class="label-text text label_Lname">Last Name * </label>
+                         <input type="text" name="" id="Lname" class="contact-input" placeholder="Last name">
+                         <label for="email" class="label-text text label_Email">E-mail * </label>
+                         <input type="email" name="" id="email" class="contact-input"   placeholder="E-mail">
+                         <label for="email" class="label-text text label_Email">Subject *</label>
+                         <input type="email" name="" id="email" class="contact-input"   placeholder="E-mail">
+                         <label for="des_text" class="label-text text label_des">Message</label>
+                         <textarea name="message_text" placeholder="Message" class="text label-text message-text" id="des_text" cols="30" rows="5"></textarea>
+                         <input type="submit" name="submit" class="btn btn-submit text" value="Submit">
+                    </form>
+               </div>
+          </section>
+     </main>
   <!-- footer section -->
      <footer>
           <div class="wrapper wrap-foo flex-center">
@@ -202,6 +137,7 @@
                </div>
           </div>
      </footer>
+     <script src="asset/js/script.js"></script>
 </body>
 
 </html>
