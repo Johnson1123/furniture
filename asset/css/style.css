@@ -71,6 +71,9 @@ img{
 .column{
      flex-direction: column;
 }
+.w-100{
+     width: 100%;
+}
 .bg-black{
      background-color: var(--color-black);
 }
@@ -169,7 +172,7 @@ header{
      font-weight: 700;
 }
 /* main style */
-main{
+.bg-primary{
      background-color: var(--color-primary);
 }
 
@@ -670,6 +673,186 @@ address p .fa{
 /* contact style end */
 
 
+
+/* about us page style */
+.about-image-con{
+     height: 300px;
+}
+.about-title{
+     font-size: var(--fz-large);
+     line-height: 1.5;
+     color: var(--color-black);
+     padding: 20px 0;
+     text-align: center;
+}
+.about-text, .DFY-text{
+     line-height: 2;
+     padding: 10px 15px 20px;
+     text-align: center;
+}
+.about-wrapper{
+     width: 100%;
+     background-color: var(--color-primary);
+}
+.about-service-con{
+     width: 80%;
+}
+.box-3{
+     height: 300px;
+     padding: 10px 5px;
+     margin: 15px 0;
+}
+.box-3-sub-title, .DFY-title{
+     color: var(--color-black);
+     font-size: var(--fz-large);
+     font-weight: 400;
+}
+.box-3-emoji{
+     font-size: var(--fz-30);
+     height: 60px;
+     width: 100px;
+     line-height: 60px;
+     font-weight: 600;
+     text-align: center;
+}
+.box-3-text{
+     line-height: 2;
+     padding: 10px 0px;
+}
+
+.about-mission-con{
+     width: 100%;
+}
+.about-mission-con{
+     width: 90%;
+}
+.about-mission-box{
+     height: 450px;
+}
+.ab-mission-text{
+     color: var(--color-black);
+}
+.ab-mission-image-con{
+     margin-bottom: 20px;
+
+}
+
+
+
+.about-DFY-left{
+     width: 100%;
+}
+
+.DFY-list-con{
+     width: 90%;
+     margin: 10px 0;
+}
+.DFY-list-con:first-of-type{
+     margin-top: 20px;
+}
+.DFY-list{
+     line-height: 3aaaaaa;
+     justify-content: space-between;
+     width: 100%;
+}
+.DFY-list .fa{
+     margin-right: 10px;
+     font-weight: 800;
+     font-size: var(--fz-large);
+}
+.active-list{
+     background-color: var(--color-primary);
+}
+.DFY-text{
+     max-height: 200px;
+     border: 1px solid var(--color-light-primary);
+     overflow: hidden;
+     width: 100%;
+     text-align: left;
+     padding: 10px 5px;
+     overflow: hidden;
+     display: none;
+}
+.DFY-display{
+     display: flex;
+}
+
+.about-DFY-right{
+     width: 90%;
+     margin: 0 auto
+}
+.slide-image{
+     height: 70px;
+     width: 70px;
+     object-fit: cover;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: -40px;
+     border-radius: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 60px 0 30px;
+  height: 340px;
+  background-color: rgb(241, 241, 241);
+}
+
+/* Hide the images by default */
+.mySlides {
+     
+  display: none;
+}
+.slide-emoji{
+     padding-top: 50px;
+     height: 100px;
+     width: 100%;
+     text-align: center;
+     color: red;
+}
+.slide-text {
+  color: #474747;
+  font-size: 15px;
+  padding: 20px 12px 20px;
+  height: 100%;
+  width: 100%;
+  line-height: 2.2;
+  bottom: 8px;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slide-title{
+     text-align: center;
+     font-weight: 500;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* about us page style ends */
 
 
 
